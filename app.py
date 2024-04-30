@@ -60,7 +60,7 @@ for linha in pagina_empresas.iter_rows(min_row=2,values_only=True):
     driver.find_element(By.ID, 'numeroFuncionarios').send_keys(quantidade_de_funcionarios)
     sleep(1)
 
-    driver.find_element(By.ID,'dataFuncionarios').send_keys(data_fundacao)
+    driver.find_element(By.ID,'dataFundacao').send_keys(data_fundacao)
     sleep(1)
 
     # 6 - cadastrar 
