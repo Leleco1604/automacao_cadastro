@@ -36,6 +36,34 @@ for linha in pagina_empresas.iter_rows(min_row=2,values_only=True):
 
 # 5.2 - Preencher cada campo
 
+driver.find_element(By.ID, 'nomeEmpresa').send_keys(nome_empresa)
+sleep(1)
+
+driver.find_element(By.ID,'emailEmpresa').send_keys(email)
+sleep(1)
+
+driver.find_element(By.ID,'telefoneEmpresa').send_keys(telefone)
+sleep(1)
+
+driver.find_element(By.ID,'enderecoEmpresa').send_keys(endereco)
+sleep(1)
+
+driver.find_element(By.ID,'cnpj').send_keys(cnpj)
+sleep(1)
+
+driver.find_element(By.ID,'areaAtuacao').send_keys(area_atuacao)
+sleep(1)
+
+driver.find_element(By.ID, 'numeroFuncionarios').send_keys(quantidade_de_funcionarios)
+sleep(1)
+
+driver.find_element(By.ID,'dataFuncionarios').send_keys(data_fundacao)
+sleep(1)
+
+
+
+
+
 
 
 
