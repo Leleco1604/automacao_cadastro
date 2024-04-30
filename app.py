@@ -29,6 +29,10 @@ sleep(2)
 botao_entrar.click()
 # 5.1 - Extrair dados da planilha
 empresas = openpyxl.load_workbook('./empresas.xlsx')
+pagina_empresas = empresas['dados empresas']
+
+for linha in pagina_empresas.iter_rows(min_row=2,values_only=True):
+    nome_empresa,email , telefone, endereco, cnpj, area_atuacao, quantidade_de_funcionarios, data_fundacao = linha
 
 # 5.2 - Preencher cada campo
 
